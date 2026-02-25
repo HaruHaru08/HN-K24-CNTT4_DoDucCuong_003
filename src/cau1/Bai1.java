@@ -41,7 +41,5 @@ public class Bai1 {
         }
 
         System.out.println("Nhom co nhieu ky tu nhat: " + max);
-
-        sc.close();
     }
 }
