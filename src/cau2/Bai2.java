@@ -52,14 +52,12 @@ public class Bai2 {
         for (int i = 0; i < lengthLeft; i++) {
             System.out.println(newArrLeft[i]);
         }
-        for (int i = 0; i < number; i++) {
-            if (i<number/2){
-                arr[i]=newArrRight[i];
-            }
-            if (i>=number/2){
-                arr[i]=newArrLeft[index];
-                index++;
-            }
+        int k = 0;
+        for (int i = 0; i < lengthRight; i++) {
+            arr[k++] = newArrRight[i];
+        }
+        for (int i = 0; i < lengthLeft; i++) {
+            arr[k++] = newArrLeft[i];
         }
         for (int i = 0; i < number; i++) {
             System.out.print(arr[i]+" ");
